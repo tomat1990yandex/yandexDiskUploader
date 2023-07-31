@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.drop-area {
+  width: 40vw;
+  height: 40vh;
+  border: 4px dashed black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disk__upload-input {
+  margin: 10px;
+}
+
+.files-list {
+  display: flex;
+  width: 40vw;
+  height: 30vh;
+  list-style-type: none;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 1rem;
+  border: aquamarine solid 4px;
+  border-radius: 10px;
+}
+
+.files-container {
+  display: flex;
+  align-items: center;
+}
+
+.files-button {
+  width: 50px;
+  height: 20px;
+}
+
+.log-list {
+  display: flex;
+  align-content: flex-start;
+  width: 40vw;
+  height: 30vh;
+  list-style-type: none;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 1rem;
+  margin: 20px;
+  border: aquamarine solid 4px;
+  border-radius: 10px;
+}
+
+.table-element {
+  margin: 5px;
+  width: 130px;
+}
+
+.log-element {
+  margin: 5px;
+  width: 260px;
+  height: 20px;
 }
